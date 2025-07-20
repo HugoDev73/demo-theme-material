@@ -1,4 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+//@use "./styles//themes/gedimedtheme.css";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  /* Base colors */
+  --my-primary: #132823;
+  --my-primary-container: #e6f2ed;
+  --my-on-primary: #ffffff;
+  --my-on-primary-container: #0a140f;
+
+  --my-secondary: #00d69e;
+  --my-secondary-container: #ccfff0;
+  --my-on-secondary: #003d2e;
+  --my-on-secondary-container: #001a13;
+
+  --my-tertiary: #90d474;
+  --my-tertiary-container: #e8fce0;
+  --my-on-tertiary: #1e4012;
+  --my-on-tertiary-container: #0d1f08;
+}
+
+
+
+html {
+  /* COLOR SYSTEM VARIABLES */
+  color-scheme: light;
+
+  /* PRIMARY */
+  --mat-sys-primary: var(--my-primary);
+  --mat-sys-on-primary: var(--my-on-primary);
+  --mat-sys-primary-container: var(--my-primary-container);
+  --mat-sys-on-primary-container: var(--my-on-primary-container);
+  --mat-sys-inverse-primary: var(--my-primary-container);
+  --mat-sys-primary-fixed: var(--my-primary-container);
+  --mat-sys-primary-fixed-dim: var(--my-primary);
+  --mat-sys-on-primary-fixed: var(--my-on-primary-container);
+  --mat-sys-on-primary-fixed-variant: var(--my-primary);
+
+  /* SECONDARY */
+  --mat-sys-secondary: var(--my-secondary);
+  --mat-sys-on-secondary: var(--my-on-secondary);
+  --mat-sys-secondary-container: var(--my-secondary-container);
+  --mat-sys-on-secondary-container: var(--my-on-secondary-container);
+  --mat-sys-secondary-fixed: var(--my-secondary-container);
+  --mat-sys-secondary-fixed-dim: var(--my-secondary);
+  --mat-sys-on-secondary-fixed: var(--my-on-secondary-container);
+  --mat-sys-on-secondary-fixed-variant: var(--my-secondary);
+
+  /* TERTIARY */
+  --mat-sys-tertiary: var(--my-tertiary);
+  --mat-sys-on-tertiary: var(--my-on-tertiary);
+  --mat-sys-tertiary-container: var(--my-tertiary-container);
+  --mat-sys-on-tertiary-container: var(--my-on-tertiary-container);
+  --mat-sys-tertiary-fixed: var(--my-tertiary-container);
+  --mat-sys-tertiary-fixed-dim: var(--my-tertiary);
+  --mat-sys-on-tertiary-fixed: var(--my-on-tertiary-container);
+  --mat-sys-on-tertiary-fixed-variant: var(--my-tertiary);
+}
