@@ -1,0 +1,87 @@
+/* Paleta personalizada */
+$my-palettes: (
+  primary: (
+    base: #132823,
+    container: #e6f2ed,
+    on: #ffffff,
+    on-container: #0a140f
+  ),
+  secondary: (
+    base: #00d69e,
+    container: #ccfff0,
+    on: #003d2e,
+    on-container: #001a13
+  ),
+  tertiary: (
+    base: #90d474,
+    container: #e8fce0,
+    on: #1e4012,
+    on-container: #0d1f08
+  )
+);
+
+/* Mixin para generar variables --my-* */
+@mixin generate-my-vars {
+  @each $role, $values in $my-palettes {
+    --my-#{$role}: #{map-get($values, base)};
+    --my-#{$role}-container: #{map-get($values, container)};
+    --my-on-#{$role}: #{map-get($values, on)};
+    --my-on-#{$role}-container: #{map-get($values, on-container)};
+  }
+}
+
+/* Mixin para generar variables --mat-sys-* */
+@mixin generate-material-vars($role) {
+  --mat-sys-#{$role}: var(--my-#{$role});
+  --mat-sys-on-#{$role}: var(--my-on-#{$role});
+  --mat-sys-#{$role}-container: var(--my-#{$role}-container);
+  --mat-sys-on-#{$role}-container: var(--my-on-#{$role}-container);
+  --mat-sys-#{$role}-fixed: var(--my-#{$role}-container);
+  --mat-sys-#{$role}-fixed-dim: var(--my-#{$role});
+  --mat-sys-on-#{$role}-fixed: var(--my-on-#{$role}-container);
+  --mat-sys-on-#{$role}-fixed-variant: var(--my-#{$role});
+}
+
+/* Aplicación del tema */
+:root {
+  /* Variables personalizadas --my-* */
+  color-scheme: light;
+  @include generate-my-vars;
+
+  /* Variables del sistema de Angular Material */
+  @include generate-material-vars(primary);
+  @include generate-material-vars(secondary);
+  @include generate-material-vars(tertiary);
+
+  /* Variables adicionales no automatizadas */
+  --mat-sys-background: light-dark(#fbf9f7, #121413);
+  --mat-sys-on-background: light-dark(#1b1c1b, #e3e2e1);
+  --mat-sys-surface: light-dark(#fbf9f7, #121413);
+  --mat-sys-surface-dim: light-dark(#dbdad8, #121413);
+  --mat-sys-surface-bright: light-dark(#fbf9f7, #383939);
+  --mat-sys-surface-container-low: light-dark(#f5f3f2, #1b1c1b);
+  --mat-sys-surface-container-lowest: light-dark(#ffffff, #0d0e0e);
+  --mat-sys-surface-container: light-dark(#efeeec, #1f201f);
+  --mat-sys-surface-container-high: light-dark(#e9e8e6, #292a29);
+  --mat-sys-surface-container-highest: light-dark(#e3e2e1, #343534);
+  --mat-sys-on-surface: light-dark(#1b1c1b, #e3e2e1);
+  --mat-sys-shadow: light-dark(#000000, #000000);
+  --mat-sys-scrim: light-dark(#000000, #000000);
+  --mat-sys-surface-tint: light-dark(#4d635d, #b4ccc4);
+  --mat-sys-inverse-surface: light-dark(#303130, #e3e2e1);
+  --mat-sys-inverse-on-surface: light-dark(#f2f0ef, #303130);
+  --mat-sys-outline: light-dark(#727876, #8c928f);
+  --mat-sys-outline-variant: light-dark(#c2c8c5, #424846);
+  --mat-sys-neutral10: light-dark(#1b1c1b, #1b1c1b);
+  --mat-sys-error: light-dark(#ba1a1a, #ffb4ab);
+  --mat-sys-on-error: light-dark(#ffffff, #690005);
+  --mat-sys-error-container: light-dark(#ffdad6, #93000a);
+  --mat-sys-on-error-container: light-dark(#410002, #ffdad6);
+  --mat-sys-surface-variant: light-dark(#dee4e0, #424846);
+  --mat-sys-on-surface-variant: light-dark(#424846, #c2c8c5);
+  --mat-sys-neutral-variant20: light-dark(#2c3230, #2c3230);
+
+  font-family: Poppins;
+   --mat-sys-brand-font-family: Poppins;
+  --mat-sys-plain-font-family: Poppins;
+}
