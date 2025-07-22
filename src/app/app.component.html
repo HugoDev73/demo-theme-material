@@ -33,59 +33,60 @@
     </mat-button-toggle-group>
     <mat-divider class="mt-16 mb-16"></mat-divider>
     <p><mat-slide-toggle>Slide me!</mat-slide-toggle></p>
-<p><mat-slide-toggle labelPosition="before">...and slide me too!</mat-slide-toggle></p>
-<mat-divider class="mt-16 mb-16"></mat-divider>
+    <p>
+      <mat-slide-toggle labelPosition="before"
+        >...and slide me too!</mat-slide-toggle
+      >
+    </p>
+    <mat-divider class="mt-16 mb-16"></mat-divider>
     <app-buttons></app-buttons>
   </app-card-container>
-<mat-divider class="mt-16 mb-16"></mat-divider>
+  <mat-divider class="mt-16 mb-16"></mat-divider>
   <app-card-container title="Checkbox">
     <app-checkbox></app-checkbox>
   </app-card-container>
 
   <mat-divider class="mt-16 mb-16"></mat-divider>
 
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
+  <app-card-container title="Cards">
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title> Australian Shepherd</mat-card-title>
+        <mat-card-subtitle>Herding group</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-button>Learn More</button>
+      </mat-card-actions>
+    </mat-card>
+    <br />
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>Poodle</mat-card-title>
+        <mat-card-subtitle>Non-sporting group</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions align="end">
+        <button mat-button>Learn More</button>
+      </mat-card-actions>
+    </mat-card>
+  </app-card-container>
 
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz
-        breeds of dog from Japan. A small, agile dog that copes very well with
-        mountainous terrain, the Shiba Inu was originally bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-divider class="mt-16 mb-16"></mat-divider>
 
-  <mat-chip-listbox aria-label="Cutest dog breeds">
-    @for (dog of bestBoys; track dog) {
-    <mat-chip-option>{{ dog }}</mat-chip-option>
-    }
-  </mat-chip-listbox>
+  <app-card-container title="Chips">
+    <mat-chip-listbox aria-label="Cutest dog breeds">
+      @for (dog of bestBoys; track dog) {
+      <mat-chip-option>{{ dog }}</mat-chip-option>
+      }
+    </mat-chip-listbox>
+  </app-card-container>
 
-  <mat-stepper>
-    <mat-step label="Step 1" state="phone">
-      <p>Put down your phones.</p>
-      <div>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </mat-step>
-    <mat-step label="Step 2" state="chat">
-      <p>Socialize with each other.</p>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </mat-step>
-    <mat-step label="Step 3">
-      <p>You're welcome.</p>
-    </mat-step>
-  </mat-stepper>
+  <mat-divider class="mt-16 mb-16"></mat-divider>
+
+  <app-card-container title="Stepper">
+    <app-stepper></app-stepper>
+  </app-card-container>
+  <mat-divider class="mt-16 mb-16"></mat-divider>
+  <app-card-container title="Tabs">
+    <app-tabs></app-tabs>
+  </app-card-container>
 </div>
