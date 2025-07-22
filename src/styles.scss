@@ -1,21 +1,44 @@
 
+/* 
+primary: #132823
+secondary: #00D69E
+tertiary: #90D474
+*/
+
 :root {
-  /* Base colors */
-  --my-primary: #132823;
-  --my-primary-container: #e6f2ed;
+  --my-primary: #076b5b;
+  --my-primary-container: #a0f2dd;
   --my-on-primary: #ffffff;
-  --my-on-primary-container: #0a140f;
+  --my-on-primary-container: #005144;
 
-  --my-secondary: #00d69e;
-  --my-secondary-container: #ccfff0;
-  --my-on-secondary: #003d2e;
-  --my-on-secondary-container: #001a13;
+  --my-secondary: #1d6b50;
+  --my-secondary-container: #a7f2d0;
+  --my-on-secondary: #ffffff;
+  --my-on-secondary-container: #00513a;
 
-  --my-tertiary: #90d474;
-  --my-tertiary-container: #e8fce0;
-  --my-on-tertiary: #1e4012;
-  --my-on-tertiary-container: #0d1f08;
+  --my-tertiary: #426833;
+  --my-tertiary-container: #c3efad;
+  --my-on-tertiary: #ffffff;
+  --my-on-tertiary-container: #2b4f1e;
 }
+
+//dark
+/* :root {
+  --my-primary: #84d6c2;
+  --my-primary-container: #005144;
+  --my-on-primary: #00382e;
+  --my-on-primary-container: #a0f2dd;
+
+  --my-secondary: #8cd5b4;
+  --my-secondary-container: #00513a;
+  --my-on-secondary: #003827;
+  --my-on-secondary-container: #a7f2d0;
+
+  --my-tertiary: #a8d293;
+  --my-tertiary-container: #2b4f1e;
+  --my-on-tertiary: #153809;
+  --my-on-tertiary-container: #c3efad;
+} */
 
 
 html {
