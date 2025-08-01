@@ -9,75 +9,75 @@ tertiary: #90D474
 
   --color-primary: #132823;//temp
 
-  --my-primary: #076b5b;
-  --my-on-primary: #ffffff;
-  --my-primary-container: #a0f2dd;
-  --my-on-primary-container: #005144;
+  --color-primary: #076b5b;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #a0f2dd;
+  --color-on-primary-container: #005144;
 
-  --my-secondary: #1d6b50;
-  --my-on-secondary: #ffffff;
-  --my-secondary-container: #a7f2d0;
-  --my-on-secondary-container: #00513a;
+  --color-secondary: #1d6b50;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a7f2d0;
+  --color-on-secondary-container: #00513a;
 
-  --my-tertiary: #426833;
-  --my-on-tertiary: #ffffff;
-  --my-tertiary-container: #c3efad;
-  --my-on-tertiary-container: #2b4f1e;
+  --color-tertiary: #426833;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #c3efad;
+  --color-on-tertiary-container: #2b4f1e;
 }
 
 //dark
 /* :root {
-  --my-primary: #84d6c2;
-  --my-primary-container: #005144;
-  --my-on-primary: #00382e;
-  --my-on-primary-container: #a0f2dd;
+  --color-primary: #84d6c2;
+  --color-primary-container: #005144;
+  --color-on-primary: #00382e;
+  --color-on-primary-container: #a0f2dd;
 
-  --my-secondary: #8cd5b4;
-  --my-secondary-container: #00513a;
-  --my-on-secondary: #003827;
-  --my-on-secondary-container: #a7f2d0;
+  --color-secondary: #8cd5b4;
+  --color-secondary-container: #00513a;
+  --color-on-secondary: #003827;
+  --color-on-secondary-container: #a7f2d0;
 
-  --my-tertiary: #a8d293;
-  --my-tertiary-container: #2b4f1e;
-  --my-on-tertiary: #153809;
-  --my-on-tertiary-container: #c3efad;
+  --color-tertiary: #a8d293;
+  --color-tertiary-container: #2b4f1e;
+  --color-on-tertiary: #153809;
+  --color-on-tertiary-container: #c3efad;
 } */
 
 
 html {
-  /* Variables personalizadas --my-* */
+  /* Variables personalizadas --color-* */
   color-scheme: light;
  
     /* PRIMARY */
-  --mat-sys-primary: var(--my-primary);
-  --mat-sys-on-primary: var(--my-on-primary);
-  --mat-sys-primary-container: var(--my-primary-container);
-  --mat-sys-on-primary-container: var(--my-on-primary-container);
-  --mat-sys-inverse-primary: var(--my-primary-container);
-  --mat-sys-primary-fixed: var(--my-primary-container);
-  --mat-sys-primary-fixed-dim: var(--my-primary);
-  --mat-sys-on-primary-fixed: var(--my-on-primary-container);
-  --mat-sys-on-primary-fixed-variant: var(--my-primary);
+  --mat-sys-primary: var(--color-primary);
+  --mat-sys-on-primary: var(--color-on-primary);
+  --mat-sys-primary-container: var(--color-primary-container);
+  --mat-sys-on-primary-container: var(--color-on-primary-container);
+  --mat-sys-inverse-primary: var(--color-primary-container);
+  --mat-sys-primary-fixed: var(--color-primary-container);
+  --mat-sys-primary-fixed-dim: var(--color-primary);
+  --mat-sys-on-primary-fixed: var(--color-on-primary-container);
+  --mat-sys-on-primary-fixed-variant: var(--color-primary);
 
   /* SECONDARY */
-  --mat-sys-secondary: var(--my-secondary);
-  --mat-sys-on-secondary: var(--my-on-secondary);
-  --mat-sys-secondary-container: var(--my-secondary-container);
-  --mat-sys-on-secondary-container: var(--my-on-secondary-container);
-  --mat-sys-secondary-fixed: var(--my-secondary-container);
-  --mat-sys-secondary-fixed-dim: var(--my-secondary);
-  --mat-sys-on-secondary-fixed: var(--my-on-secondary-container);
-  --mat-sys-on-secondary-fixed-variant: var(--my-secondary);
+  --mat-sys-secondary: var(--color-secondary);
+  --mat-sys-on-secondary: var(--color-on-secondary);
+  --mat-sys-secondary-container: var(--color-secondary-container);
+  --mat-sys-on-secondary-container: var(--color-on-secondary-container);
+  --mat-sys-secondary-fixed: var(--color-secondary-container);
+  --mat-sys-secondary-fixed-dim: var(--color-secondary);
+  --mat-sys-on-secondary-fixed: var(--color-on-secondary-container);
+  --mat-sys-on-secondary-fixed-variant: var(--color-secondary);
 
   /* TERTIARY */
-  --mat-sys-tertiary: var(--my-tertiary);
-  --mat-sys-on-tertiary: var(--my-on-tertiary);
-  --mat-sys-tertiary-container: var(--my-tertiary-container);
-  --mat-sys-on-tertiary-container: var(--my-on-tertiary-container);
-  --mat-sys-tertiary-fixed: var(--my-tertiary-container);
-  --mat-sys-tertiary-fixed-dim: var(--my-tertiary);
-  --mat-sys-on-tertiary-fixed: var(--my-on-tertiary-container);
-  --mat-sys-on-tertiary-fixed-variant: var(--my-tertiary);
+  --mat-sys-tertiary: var(--color-tertiary);
+  --mat-sys-on-tertiary: var(--color-on-tertiary);
+  --mat-sys-tertiary-container: var(--color-tertiary-container);
+  --mat-sys-on-tertiary-container: var(--color-on-tertiary-container);
+  --mat-sys-tertiary-fixed: var(--color-tertiary-container);
+  --mat-sys-tertiary-fixed-dim: var(--color-tertiary);
+  --mat-sys-on-tertiary-fixed: var(--color-on-tertiary-container);
+  --mat-sys-on-tertiary-fixed-variant: var(--color-tertiary);
 
   /* Variables adicionales no automatizadas */
   --mat-sys-background: light-dark(#fbf9f7, #121413);
